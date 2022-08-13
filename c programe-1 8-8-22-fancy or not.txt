@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	int n,r,ecnt=0,ocnt=0;
+	scanf("%d",&n);
+	while(n>0)
+	{
+		r=n%10;
+		if(r%2==0)
+		ecnt++;
+		else
+		ocnt++;
+		n/=10;
+	}
+	if(ecnt==ocnt)
+	printf("Fancy Number");
+	else
+	printf("Not Fancy Number");
+}
